@@ -1,0 +1,61 @@
+.navbar {
+  background-color: #393e4b;
+}
+
+.navbar ul li {
+  color: white;
+  margin: 0 auto;
+}
+
+.seccionNoticias {
+  width: 80%;
+  margin: 3% auto;
+}
+
+.banner img {
+  width: 100%;
+}
+
+.cuadroNoticia {
+  background-color: #f2f2f2;
+  margin: 1.2%;
+}
+
+.cuadroNoticia p {
+  margin: 5%;
+}
+
+.cuadroNoticia h3 {
+  margin: 5% 5% 0 5%;
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.cuadroNoticia button {
+  margin: 0 auto 5%;
+  font-weight: bold;
+  background-color: blueviolet;
+  color: white;
+}
+
+.cuadroNoticia img {
+  width: 100%;
+}
+
+#noticiasValpo span {
+  margin: 7% auto 0 auto;
+}
+
+#copyright span {
+  margin: 0 auto 5% auto;
+}
+
+#copyright {
+  font-size: small;
+}
+
+#noticiasValpo {
+  font-size: large;
+  font-style: italic;
+}
+/*# sourceMappingURL=app.component.css.map */
