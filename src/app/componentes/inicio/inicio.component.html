@@ -1,0 +1,54 @@
+<div class="container-fluid">
+    <div class="row justify-content-center  navbar-dark bg-dark">
+        <div class="col-4 ">
+            <ul ngbNav #nav="ngbNav" class="nav-tabs ">
+                <li ngbNavItem>
+                    <a ngbNavLink>Inicio</a>
+                    <ng-template ngbNavContent>First content</ng-template>
+                    </li>
+                <li ngbNavItem>
+                    <a ngbNavLink>Noticias</a>
+                    <ng-template ngbNavContent>Second content</ng-template>
+                    </li>
+                <li ngbNavItem>
+                    <a ngbNavLink>Servicio Al Cliente</a>
+                    <ng-template ngbNavContent>Second content</ng-template>
+                    </li>
+            </ul>
+        </div>               
+    </div>
+
+    <div [ngbNavOutlet]="nav" class="row"></div>
+    <div class="row banner">
+        <img src="https://picsum.photos/2000/400?random=8" alt="bannerPrincipal">
+    </div>
+    <section class="seccionNoticiasDestacadas">
+        <div  class="row">
+            <div *ngFor="let noticia of listaNoticias" class="col-3 cuadroNoticia">
+                <div class="row">
+                    <img src="{{noticia.imagen}}" alt="imgNoticia">
+                </div>
+                <div class="row">
+                    <h2>{{noticia.titulo}}</h2>
+                </div>
+                <div class="row">
+                    <h3>{{noticia.autor}} | {{noticia.fecha}}</h3>
+                </div>
+                <div class="row">
+                    <p>{{noticia.contenido}}</p>
+                </div>
+                <div class="row">                    
+                    <button [routerLink]="['/detalleNoticia',noticia.id]" routerLinkActive="router-link-active" >Ver Más</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <div class="row" id="noticiasValpo">
+        <span> Noticias - Valparaiso</span>
+    </div>
+    <hr>
+    <div class="row" id="copyright">
+        <span> Copyright @ 2021 Your Company Name | Creado por: asdfasd</span>
+    </div>
+</div>

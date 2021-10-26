@@ -1,0 +1,17 @@
+import { Component, OnInit } from '@angular/core';
+import { ListFormat } from 'typescript';
+import {listaNoticias} from '../../interfaces/noticia';
+
+@Component({
+  selector: 'app-inicio',
+  templateUrl: './inicio.component.html',
+  styleUrls: ['./inicio.component.scss']
+})
+export class InicioComponent implements OnInit {
+  listaNoticias = listaNoticias;
+  constructor() { }
+
+  ngOnInit(): void {
+  }
+
+}

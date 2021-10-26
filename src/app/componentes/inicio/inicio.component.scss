@@ -1,0 +1,79 @@
+
+
+.navbar-dark ul li{
+    background-color: #393e4b;    
+    border: 2px,solid,rgb(211, 211, 211);
+    margin: 1% 4% 3% 4%;
+    .active{
+        background-color: #4a505e;
+        color: white;
+    }
+    .hover{
+        color: #ffffff;
+        background-color: yellow;
+    }
+    .focus{
+        color: yellow;
+    }
+}
+
+
+
+
+.seccionNoticiasDestacadas{
+    width: 70%;
+    margin: 0% auto ;   
+}
+.banner{    
+    img{
+        width: 100%;
+    }    
+}
+.cuadroNoticia{
+    background-color: #f2f2f2;
+    margin: 1.2%;
+    margin-left: 3%;
+    
+    
+    p{
+        margin: 5%;
+    }
+    h2{
+        margin: 5% 5% 0 5%;
+        font-size: 1rem;
+        font-weight: bold;        
+    }
+    h3{
+        margin: 5% 5% 0 5%;
+        font-size: 1rem;
+        
+    }
+    button{
+        margin: 0 auto 5%;   
+        font-weight: bold;
+        background-color: blueviolet;
+        color: white;
+    }
+    img{
+        width: 100%;
+    }
+}
+
+#noticiasValpo{
+    span{
+        margin: 7% auto 0 auto;   
+    }
+}
+#copyright{
+    span{
+        margin: 0 auto 5% auto;   
+    }
+
+}
+#copyright{
+    font-size: small;
+}
+#noticiasValpo{
+    font-size: large;
+    font-style: italic;
+}
