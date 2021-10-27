@@ -1,0 +1,20 @@
+<div class="container">        
+    <div class="row">
+        <img src="{{noticia.imagen}}" alt="imgNoticia">
+    </div>
+    <div class="row">
+        <h2>{{noticia.titulo}} |</h2>  <span [ngClass]="{azul: categoria.color=='azul',
+                                                         rojo: categoria.color=='rojo',
+                                                         verde: categoria.color=='verde',
+                                                         azulOscuro: categoria.color=='azulOscuro',
+                                                         rojoOscuro: categoria.color=='rojoOscuro',                                             
+                                                         violeta: categoria.color=='violeta'}" >{{categoria.nombre}} </span>
+    </div>
+    <div class="row">
+        <h3>{{noticia.autor}} | {{noticia.fecha}}</h3>
+    </div>
+    <div class="row">
+        <p>{{noticia.contenido}}</p>
+    </div>
+    
+</div>
