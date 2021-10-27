@@ -1,0 +1,16 @@
+.navbar-dark ul li{
+    background-color: #393e4b;    
+    border: 2px,solid,rgb(211, 211, 211);
+    margin: 1% 4% 3% 4%;
+    .active{
+        background-color: #4a505e;
+        color: white;
+    }
+    .hover{
+        color: #ffffff;
+        background-color: yellow;
+    }
+    .focus{
+        color: yellow;
+    }
+}
