@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { ListFormat } from 'typescript';
 import {listaNoticias} from '../../interfaces/noticia';
+
 
 @Component({
   selector: 'app-inicio',
@@ -10,7 +10,6 @@ import {listaNoticias} from '../../interfaces/noticia';
 export class InicioComponent implements OnInit {
   listaNoticias = listaNoticias;
   constructor() { }
-
   ngOnInit(): void {
   }
 

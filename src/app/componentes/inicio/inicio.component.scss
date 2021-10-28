@@ -18,7 +18,7 @@
     }
     h2{
         margin: 5% 5% 0 5%;
-        font-size: 1rem;
+        font-size: 1.2rem;
         font-weight: bold;        
     }
     h3{
@@ -29,29 +29,58 @@
     button{
         margin: 0 auto 5%;   
         font-weight: bold;
-        background-color: blueviolet;
         color: white;
     }
     img{
         width: 100%;
     }
 }
+.azul{
+    color: blue;
+    font-size: 1.5rem;    
+}
+.verde{
+    color: green;
+    font-size: 1.5rem;
+}
+.rojo{
+    color: red;
+    font-size: 1.5rem;
+}
+.rojoOscuro{
+    color: darkred;
+    font-size: 1.5rem;
+}
+.azulOscuro{
+    color: darkblue;
+    font-size: 1.5rem;
+}
+.violeta{
+    color: violet;
+    font-size: 1.5rem;
+}
 
-#noticiasValpo{
-    span{
-        margin: 7% auto 0 auto;   
-    }
+.azulBoton{
+    background-color: blue;    
 }
-#copyright{
-    span{
-        margin: 0 auto 5% auto;   
-    }
+.verdeBoton{
+    background-color: green;
+    
+}
+.rojoBoton{
+    background-color: red;
+    
+}
+.rojoOscuroBoton{
+    background-color: darkred;
+    
+}
+.azulOscuroBoton{
+    background-color: darkblue;
+    
+}
+.violetaBoton{
+    background-color: violet;
+    
+}
 
-}
-#copyright{
-    font-size: small;
-}
-#noticiasValpo{
-    font-size: large;
-    font-style: italic;
-}

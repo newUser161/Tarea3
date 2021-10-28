@@ -5,6 +5,7 @@ export interface Noticia {
     autor:string;
     fecha:string;
     imagen:string;
+    resumen:string;
     contenido:string;
 }
 
@@ -16,7 +17,8 @@ export let listaNoticias:Array<Noticia> = [
         autor: "Autor 1",
         fecha: Date().toString(),
         imagen: "https://picsum.photos/400/200?random=1",
-        contenido: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur atque quae repudiandae, facere a cupiditate deserunt molestias ipsa assumenda labore esse unde corrupti saepe, molestiae quasi sapiente praesentium accusamus numquam."
+        resumen: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur atque quae repudiandae, facere a cupiditate deserunt molestias ipsa assumenda labore esse unde corrupti saepe, molestiae quasi sapiente praesentium accusamus numquam.",
+        contenido: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur atque quae repudiandae, facere a cupiditate deserunt molestias ipsa assumenda labore esse unde corrupti saepe, molestiae quasi sapiente praesentium accusamus numquam.Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur atque quae repudiandae, facere a cupiditate deserunt molestias ipsa assumenda labore esse unde corrupti saepe, molestiae quasi sapiente praesentium accusamus numquam.Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur atque quae repudiandae, facere a cupiditate deserunt molestias ipsa assumenda labore esse unde corrupti saepe, molestiae quasi sapiente praesentium accusamus numquam.Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur atque quae repudiandae, facere a cupiditate deserunt molestias ipsa assumenda labore esse unde corrupti saepe, molestiae quasi sapiente praesentium accusamus numquam."
     },
     {
         id:2,
@@ -25,7 +27,8 @@ export let listaNoticias:Array<Noticia> = [
         autor: "Autor 2",
         fecha: Date().toString(),
         imagen: "https://picsum.photos/400/200?random=2",
-        contenido: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur atque quae repudiandae, facere a cupiditate deserunt molestias ipsa assumenda labore esse unde corrupti saepe, molestiae quasi sapiente praesentium accusamus numquam."
+        resumen: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur atque quae repudiandae, facere a cupiditate deserunt molestias ipsa assumenda labore esse unde corrupti saepe, molestiae quasi sapiente praesentium accusamus numquam.",
+        contenido: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur atque quae repudiandae, facere a cupiditate deserunt molestias ipsa assumenda labore esse unde corrupti saepe, molestiae quasi sapiente praesentium accusamus numquam.Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur atque quae repudiandae, facere a cupiditate deserunt molestias ipsa assumenda labore esse unde corrupti saepe, molestiae quasi sapiente praesentium accusamus numquam.Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur atque quae repudiandae, facere a cupiditate deserunt molestias ipsa assumenda labore esse unde corrupti saepe, molestiae quasi sapiente praesentium accusamus numquam.Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur atque quae repudiandae, facere a cupiditate deserunt molestias ipsa assumenda labore esse unde corrupti saepe, molestiae quasi sapiente praesentium accusamus numquam."
     },
     {
         id:3,
@@ -34,7 +37,8 @@ export let listaNoticias:Array<Noticia> = [
         autor: "Autor 3",
         fecha: Date().toString(),
         imagen: "https://picsum.photos/400/200?random=3",
-        contenido: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur atque quae repudiandae, facere a cupiditate deserunt molestias ipsa assumenda labore esse unde corrupti saepe, molestiae quasi sapiente praesentium accusamus numquam."
+        resumen: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur atque quae repudiandae, facere a cupiditate deserunt molestias ipsa assumenda labore esse unde corrupti saepe, molestiae quasi sapiente praesentium accusamus numquam.",
+        contenido: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur atque quae repudiandae, facere a cupiditate deserunt molestias ipsa assumenda labore esse unde corrupti saepe, molestiae quasi sapiente praesentium accusamus numquam.Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur atque quae repudiandae, facere a cupiditate deserunt molestias ipsa assumenda labore esse unde corrupti saepe, molestiae quasi sapiente praesentium accusamus numquam.Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur atque quae repudiandae, facere a cupiditate deserunt molestias ipsa assumenda labore esse unde corrupti saepe, molestiae quasi sapiente praesentium accusamus numquam.Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur atque quae repudiandae, facere a cupiditate deserunt molestias ipsa assumenda labore esse unde corrupti saepe, molestiae quasi sapiente praesentium accusamus numquam."
     },
     {
         id:4,
@@ -43,7 +47,8 @@ export let listaNoticias:Array<Noticia> = [
         autor: "Autor 4",
         fecha: Date().toString(),
         imagen: "https://picsum.photos/400/200?random=4",
-        contenido: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur atque quae repudiandae, facere a cupiditate deserunt molestias ipsa assumenda labore esse unde corrupti saepe, molestiae quasi sapiente praesentium accusamus numquam."
+        resumen: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur atque quae repudiandae, facere a cupiditate deserunt molestias ipsa assumenda labore esse unde corrupti saepe, molestiae quasi sapiente praesentium accusamus numquam.",
+        contenido: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur atque quae repudiandae, facere a cupiditate deserunt molestias ipsa assumenda labore esse unde corrupti saepe, molestiae quasi sapiente praesentium accusamus numquam.Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur atque quae repudiandae, facere a cupiditate deserunt molestias ipsa assumenda labore esse unde corrupti saepe, molestiae quasi sapiente praesentium accusamus numquam.Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur atque quae repudiandae, facere a cupiditate deserunt molestias ipsa assumenda labore esse unde corrupti saepe, molestiae quasi sapiente praesentium accusamus numquam.Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur atque quae repudiandae, facere a cupiditate deserunt molestias ipsa assumenda labore esse unde corrupti saepe, molestiae quasi sapiente praesentium accusamus numquam."
     },
     {
         id:5,
@@ -52,7 +57,8 @@ export let listaNoticias:Array<Noticia> = [
         autor: "Autor 5",
         fecha: Date().toString(),
         imagen: "https://picsum.photos/400/200?random=5",
-        contenido: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur atque quae repudiandae, facere a cupiditate deserunt molestias ipsa assumenda labore esse unde corrupti saepe, molestiae quasi sapiente praesentium accusamus numquam."
+        resumen: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur atque quae repudiandae, facere a cupiditate deserunt molestias ipsa assumenda labore esse unde corrupti saepe, molestiae quasi sapiente praesentium accusamus numquam.",
+        contenido: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur atque quae repudiandae, facere a cupiditate deserunt molestias ipsa assumenda labore esse unde corrupti saepe, molestiae quasi sapiente praesentium accusamus numquam.Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur atque quae repudiandae, facere a cupiditate deserunt molestias ipsa assumenda labore esse unde corrupti saepe, molestiae quasi sapiente praesentium accusamus numquam.Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur atque quae repudiandae, facere a cupiditate deserunt molestias ipsa assumenda labore esse unde corrupti saepe, molestiae quasi sapiente praesentium accusamus numquam.Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur atque quae repudiandae, facere a cupiditate deserunt molestias ipsa assumenda labore esse unde corrupti saepe, molestiae quasi sapiente praesentium accusamus numquam."
     },
     {
         id:6,
@@ -61,7 +67,8 @@ export let listaNoticias:Array<Noticia> = [
         autor: "Autor 6",
         fecha: Date().toString(),
         imagen: "https://picsum.photos/400/200?random=6",
-        contenido: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur atque quae repudiandae, facere a cupiditate deserunt molestias ipsa assumenda labore esse unde corrupti saepe, molestiae quasi sapiente praesentium accusamus numquam."
+        resumen: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur atque quae repudiandae, facere a cupiditate deserunt molestias ipsa assumenda labore esse unde corrupti saepe, molestiae quasi sapiente praesentium accusamus numquam.",
+        contenido: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur atque quae repudiandae, facere a cupiditate deserunt molestias ipsa assumenda labore esse unde corrupti saepe, molestiae quasi sapiente praesentium accusamus numquam.Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur atque quae repudiandae, facere a cupiditate deserunt molestias ipsa assumenda labore esse unde corrupti saepe, molestiae quasi sapiente praesentium accusamus numquam.Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur atque quae repudiandae, facere a cupiditate deserunt molestias ipsa assumenda labore esse unde corrupti saepe, molestiae quasi sapiente praesentium accusamus numquam.Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur atque quae repudiandae, facere a cupiditate deserunt molestias ipsa assumenda labore esse unde corrupti saepe, molestiae quasi sapiente praesentium accusamus numquam."
     },
     {
         id:7,
@@ -70,7 +77,8 @@ export let listaNoticias:Array<Noticia> = [
         autor: "Autor 7",
         fecha: Date().toString(),
         imagen: "https://picsum.photos/400/200?random=7",
-        contenido: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur atque quae repudiandae, facere a cupiditate deserunt molestias ipsa assumenda labore esse unde corrupti saepe, molestiae quasi sapiente praesentium accusamus numquam."
+        resumen: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur atque quae repudiandae, facere a cupiditate deserunt molestias ipsa assumenda labore esse unde corrupti saepe, molestiae quasi sapiente praesentium accusamus numquam.",
+        contenido: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur atque quae repudiandae, facere a cupiditate deserunt molestias ipsa assumenda labore esse unde corrupti saepe, molestiae quasi sapiente praesentium accusamus numquam.Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur atque quae repudiandae, facere a cupiditate deserunt molestias ipsa assumenda labore esse unde corrupti saepe, molestiae quasi sapiente praesentium accusamus numquam.Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur atque quae repudiandae, facere a cupiditate deserunt molestias ipsa assumenda labore esse unde corrupti saepe, molestiae quasi sapiente praesentium accusamus numquam.Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur atque quae repudiandae, facere a cupiditate deserunt molestias ipsa assumenda labore esse unde corrupti saepe, molestiae quasi sapiente praesentium accusamus numquam."
     },
  
 ];

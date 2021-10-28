@@ -1,0 +1,21 @@
+.navbar-dark ul li {
+  background-color: #393e4b;
+  border: 2px, solid, lightgray;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.navbar-dark ul li .active {
+  background-color: #4a505e;
+  color: white;
+}
+
+.navbar-dark ul li .hover {
+  color: #ffffff;
+  background-color: yellow;
+}
+
+.navbar-dark ul li .focus {
+  color: yellow;
+}
+/*# sourceMappingURL=navbar.component.css.map */

@@ -1,3 +1,15 @@
+img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+  height: 400px;
+}
+
+.noticia {
+  width: 70%;
+  margin: 2% auto;
+}
+
 .azul {
   color: blue;
   font-size: 1.5rem;

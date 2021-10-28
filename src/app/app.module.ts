@@ -10,6 +10,7 @@ import { DetalleNoticiaComponent } from './componentes/detalle-noticia/detalle-n
 import { NavbarComponent } from './componentes/navbar/navbar.component';
 import { NoticiasComponent } from './componentes/noticias/noticias.component';
 import { ServicioAlClienteComponent } from './componentes/servicio-al-cliente/servicio-al-cliente.component';
+import { FooterComponent } from './componentes/footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { ServicioAlClienteComponent } from './componentes/servicio-al-cliente/se
     DetalleNoticiaComponent,
     NavbarComponent,
     NoticiasComponent,
-    ServicioAlClienteComponent
+    ServicioAlClienteComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,

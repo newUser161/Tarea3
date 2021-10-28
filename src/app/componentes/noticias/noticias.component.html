@@ -1,1 +1,22 @@
-<p>noticias works!</p>
+<div class="container-fluid">        
+    <section class="seccionNoticiasDestacadas">
+        <div  class="row justify-content-md-center">
+            <div *ngFor="let noticia of listaNoticias" class="col-3 cuadroNoticia">
+                <div class="row">
+                    <img src="{{noticia.imagen}}" alt="imgNoticia">
+                </div>
+                <div class="row">
+                    <h2 [routerLink]="['/detalleNoticia',noticia.id]" routerLinkActive="router-link-active" >{{noticia.titulo}}</h2>
+                </div>
+                
+                <div class="row">
+                    <p>{{noticia.resumen}}</p>
+                </div>
+                <div class="row">                    
+                    <button class="btn btn-light" [routerLink]="['/detalleNoticia',noticia.id]" [routerLink]="['/detalleNoticia',noticia.id]" routerLinkActive="router-link-active" >Ver Más</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+</div>
