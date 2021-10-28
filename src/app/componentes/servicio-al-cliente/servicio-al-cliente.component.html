@@ -1,1 +1,85 @@
-<p>servicio-al-cliente works!</p>
+
+<form autocomplete="off" [formGroup]="miFormulario" (ngSubmit)="guardar()">
+
+    <!-- Nombre -->
+    <div class="mb-3 row">
+        <label class="col-sm-3 col-form-label">Nombre Completo</label>
+        <div class="col-sm-9">
+            <input class="form-control"
+                    formControlName="nombre"
+                    placeholder="Nombre Completo de la Persona">
+                <span class="form-text text-danger"
+                    *ngIf="campoEsValido('nombre')">
+                    Este campo es obligatorio, debe tener como minimo 3 caracteres
+                </span>
+        </div>
+    </div>
+
+    <!-- telefono -->
+    <div class="mb-3 row">
+        <label class="col-sm-3 col-form-label">Teléfono</label>
+        <div class="col-sm-9">
+            <input class="form-control"
+                    formControlName="telefono"
+                    placeholder="Teléfono de la Persona">
+                <span class="form-text text-danger"
+                    *ngIf="campoEsValido('telefono')">
+                    Este campo es obligatorio, debe tener como minimo 7 caracteres
+                </span>
+        </div>
+    </div>
+
+    <!-- correo -->
+    <div class="mb-3 row">
+        <label class="col-sm-3 col-form-label">Correo</label>
+        <div class="col-sm-9">
+            <input class="form-control"
+                    formControlName="correo"
+                    placeholder="Correo de la Persona">
+                <span class="form-text text-danger"
+                    *ngIf="campoEsValido('correo')">
+                    Este campo es obligatorio, debe tener como minimo 7 caracteres
+                </span>
+        </div>
+    </div>
+
+    <!-- dirigido a -->
+    <div class="mb-3 row">
+        <label class="col-sm-3 col-form-label">Dirigido a</label>
+        <div class="col-sm-9">
+            <select class="form-control"
+                    formControlName="dirigidoA">
+                <option value="contenidos">Contenidos</option>
+                <option value="publicidad">Publicidad</option>
+                <option value="sugerencias">Sugerencias</option>
+                <option value="suscripciones">Suscripciones Digitales</option>
+            </select>
+        </div>
+    </div>
+
+    <!-- mensaje -->
+    <div class="mb-3 row">
+        <label class="col-sm-3 col-form-label">Mensaje</label>
+        <div class="col-sm-9">
+            <textarea class="form-control"
+                    formControlName="mensaje"
+                    placeholder="Mensaje de la Persona"></textarea>
+                <span class="form-text text-danger"
+                    *ngIf="campoEsValido('mensaje')">
+                    Este campo es obligatorio, debe tener como minimo 7 caracteres
+                </span>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-sm-12">
+            <button type="button"
+                    class="btn btn-primary float-end"
+                    (click)="guardar()">
+                Guardar
+            </button>
+        </div>
+    </div>
+
+
+</form>
