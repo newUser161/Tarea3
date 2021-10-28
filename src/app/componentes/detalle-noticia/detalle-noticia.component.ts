@@ -24,7 +24,6 @@ export class DetalleNoticiaComponent implements OnInit {
   ngOnInit(): void {
     this.noticia = listaNoticias.find(objeto=>objeto.id==this.idNoticia)    
     this.categoria = listaCategorias.find(objeto=>objeto.id==this.noticia.idCategoria)
-    console.log(this.categoria);
     
     
   }
