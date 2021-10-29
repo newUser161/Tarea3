@@ -1,4 +1,4 @@
 # Tarea3
-Integrantes:
--Ivo Rivera
--Alonso Robledo
+Integrantes:  
+  -Ivo Rivera  
+  -Alonso Robledo
