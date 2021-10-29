@@ -12,8 +12,13 @@
                             placeholder="Nombre Completo de la Persona">
                         <span class="form-text text-danger"
                             *ngIf="campoEsValido('nombre')">
-                            Este campo es obligatorio, debe tener como minimo 3 caracteres
+                            Obligatorio, inserte nombre y apellidos válidos
                         </span>
+                        <span class="form-text text-danger"
+                            *ngIf="validarNombre()">
+                            Debe ingresar un nombre y dos apellidos
+                        </span>
+                    
                 </div>
             </div>
 
@@ -26,7 +31,7 @@
                             placeholder="Teléfono de la Persona">
                         <span class="form-text text-danger"
                             *ngIf="campoEsValido('telefono')">
-                            Este campo es obligatorio, debe tener como minimo 7 caracteres
+                            Obligatorio, inserte un número telefónico de 9 dígitos
                         </span>
                 </div>
             </div>
@@ -37,10 +42,10 @@
                 <div class="col-sm-9">
                     <input class="form-control"
                             formControlName="correo"
-                            placeholder="Correo de la Persona">
+                            placeholder="correo@example.com">
                         <span class="form-text text-danger"
                             *ngIf="campoEsValido('correo')">
-                            Este campo es obligatorio, debe tener como minimo 7 caracteres
+                            Obligatorio, inserte su correo electrónico
                         </span>
                 </div>
             </div>
@@ -56,6 +61,10 @@
                         <option value="sugerencias">Sugerencias</option>
                         <option value="suscripciones">Suscripciones Digitales</option>
                     </select>
+                    <span class="form-text text-danger"
+                        *ngIf="campoEsValido('dirigidoA')">
+                        Este campo es obligatorio, seleccione una opción
+                    </span>
                 </div>
             </div>
 
@@ -68,8 +77,17 @@
                             placeholder="Mensaje de la Persona"></textarea>
                         <span class="form-text text-danger"
                             *ngIf="campoEsValido('mensaje')">
-                            Este campo es obligatorio, debe tener como minimo 7 caracteres
+                            Este campo es obligatorio, ingrese el mensaje a enviar (máximo 200 caracteres)
                         </span>
+                        <div class="row">
+                            <div class="col">
+                                <span class="form-text text-muted">
+                                    {{ restanteMensaje() }} caracteres restantes
+                                </span>
+                            </div>
+                        </div>
+
+
                 </div>
             </div>
 
