@@ -35,4 +35,9 @@ export let listaCategorias:Array<Categoria> = [
         nombre: "Tecnologia",
         color: "rojo"
     },
+    {
+        id:7,
+        nombre: "Otros",
+        color: "gris"
+    },
 ];

@@ -6,8 +6,15 @@
                     <img src="{{noticia.imagen}}" alt="imgNoticia">
                 </div>
                 <div class="row">
-                    <h2 [routerLink]="['/detalleNoticia',noticia.id]" routerLinkActive="router-link-active" >{{noticia.titulo}}</h2>
-                </div>
+                    <h2 [ngClass]="{
+                        azul: noticia.idCategoria==2,
+                        rojo: noticia.idCategoria==6,
+                        verde: noticia.idCategoria==1,
+                        azulOscuro: noticia.idCategoria==5,
+                        rojoOscuro: noticia.idCategoria==3,                                             
+                        violeta: noticia.idCategoria==4,
+                        gris: noticia.idCategoria==7}"  
+                        [routerLink]="['/detalleNoticia',noticia.id]" routerLinkActive="router-link-active" >{{noticia.titulo}}</h2>                </div>
                 
                 <div class="row">
                     <p>{{noticia.resumen}}</p>

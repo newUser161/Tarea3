@@ -1,8 +1,12 @@
 .seccionNoticiasDestacadas{
     width: 70%;
     margin: 0% auto ;   
-    margin-top: 3%;
+    margin-top: 1%;
+    button{
+        color: white;
+    }
 }
+
 .banner{    
     img{
         width: 100%;
@@ -14,6 +18,9 @@
     height: 100%;
     margin: 0% auto ;   
     margin-top: 3%;
+    .tituloOtrasNoticias h2{
+        margin: 5% auto ;   
+    }
 }
 
 .cuadroNoticia{
@@ -38,7 +45,7 @@
     button{
         margin: 0 auto 5%;   
         font-weight: bold;
-        color: white;
+        
     }
     img{
         width: 100%;
@@ -68,6 +75,10 @@
     color: violet;
     font-size: 1.5rem;
 }
+.gris{
+    color: gray;
+    font-size: 1.5rem;
+}
 
 .azulBoton{
     background-color: blue;    
@@ -91,5 +102,8 @@
 .violetaBoton{
     background-color: violet;
     
+}
+.grisBoton{    
+    border-color: black;
 }
 

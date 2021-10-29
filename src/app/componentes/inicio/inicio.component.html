@@ -17,7 +17,8 @@
                         verde: noticia.idCategoria==1,
                         azulOscuro: noticia.idCategoria==5,
                         rojoOscuro: noticia.idCategoria==3,                                             
-                        violeta: noticia.idCategoria==4}" 
+                        violeta: noticia.idCategoria==4,
+                        gris: noticia.idCategoria==7}"  
                         [routerLink]="['/detalleNoticia',noticia.id]" routerLinkActive="router-link-active" >{{noticia.titulo}}</h2>
                 </div>
                 
@@ -31,7 +32,8 @@
                         verdeBoton: noticia.idCategoria==1,
                         azulOscuroBoton: noticia.idCategoria==5,
                         rojoOscuroBoton: noticia.idCategoria==3,                                             
-                        violetaBoton: noticia.idCategoria==4}" 
+                        violetaBoton: noticia.idCategoria==4,
+                        grisBoton: noticia.idCategoria==7}"  
                         [routerLink]="['/detalleNoticia',noticia.id]" [routerLink]="['/detalleNoticia',noticia.id]" routerLinkActive="router-link-active" >Leer Más</button>
                 </div>
             </div>
@@ -40,18 +42,19 @@
 
     <section class="seccionOtrasNoticias">   
         <div  class="row justify-content-md-center"> 
-            <div *ngFor="let noticia of listaNoticias | slice:3" class="col-2 cuadroNoticia">
+            <div *ngFor="let noticia of listaNoticias | slice:6" class="col-2 cuadroNoticia">
                 <div class="row">
                     <img src="{{noticia.imagen}}" alt="imgNoticia">
                 </div>
-                <div class="row">
+                <div class="row tituloOtrasNoticias">
                     <h2 [ngClass]="{
                         azul: noticia.idCategoria==2,
                         rojo: noticia.idCategoria==6,
                         verde: noticia.idCategoria==1,
                         azulOscuro: noticia.idCategoria==5,
                         rojoOscuro: noticia.idCategoria==3,                                             
-                        violeta: noticia.idCategoria==4}" 
+                        violeta: noticia.idCategoria==4,
+                        gris: noticia.idCategoria==7}" 
                         [routerLink]="['/detalleNoticia',noticia.id]" routerLinkActive="router-link-active" >{{noticia.titulo}}</h2>
                 </div>
                 
@@ -59,13 +62,14 @@
                     <p>{{noticia.resumen}}</p>
                 </div>
                 <div class="row">                    
-                    <button class="btn" [ngClass]="{
+                    <button class="btn btn-light" [ngClass]="{
                         azulBoton: noticia.idCategoria==2,
                         rojoBoton: noticia.idCategoria==6,
                         verdeBoton: noticia.idCategoria==1,
                         azulOscuroBoton: noticia.idCategoria==5,
                         rojoOscuroBoton: noticia.idCategoria==3,                                             
-                        violetaBoton: noticia.idCategoria==4}" 
+                        violetaBoton: noticia.idCategoria==4,
+                        grisBoton: noticia.idCategoria==7}" 
                         [routerLink]="['/detalleNoticia',noticia.id]" [routerLink]="['/detalleNoticia',noticia.id]" routerLinkActive="router-link-active" >Leer Más</button>
                 </div>
             </div>
