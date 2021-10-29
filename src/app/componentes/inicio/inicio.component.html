@@ -4,9 +4,9 @@
         <img src="https://picsum.photos/2000/400?random=8" alt="bannerPrincipal">
     </div>
 
-    <section class="seccionNoticiasDestacadas">
-        <div  class="row justify-content-md-center">
-            <div *ngFor="let noticia of listaNoticias" class="col-3 cuadroNoticia">
+    <section class="seccionNoticiasDestacadas">   
+        <div  class="row justify-content-md-center"> 
+            <div *ngFor="let noticia of listaNoticias | slice:0:3" class="col-3 cuadroNoticia">
                 <div class="row">
                     <img src="{{noticia.imagen}}" alt="imgNoticia">
                 </div>
@@ -37,6 +37,38 @@
             </div>
         </div>
     </section>
-    
-   
+
+    <section class="seccionOtrasNoticias">   
+        <div  class="row justify-content-md-center"> 
+            <div *ngFor="let noticia of listaNoticias | slice:3" class="col-2 cuadroNoticia">
+                <div class="row">
+                    <img src="{{noticia.imagen}}" alt="imgNoticia">
+                </div>
+                <div class="row">
+                    <h2 [ngClass]="{
+                        azul: noticia.idCategoria==2,
+                        rojo: noticia.idCategoria==6,
+                        verde: noticia.idCategoria==1,
+                        azulOscuro: noticia.idCategoria==5,
+                        rojoOscuro: noticia.idCategoria==3,                                             
+                        violeta: noticia.idCategoria==4}" 
+                        [routerLink]="['/detalleNoticia',noticia.id]" routerLinkActive="router-link-active" >{{noticia.titulo}}</h2>
+                </div>
+                
+                <div class="row">
+                    <p>{{noticia.resumen}}</p>
+                </div>
+                <div class="row">                    
+                    <button class="btn" [ngClass]="{
+                        azulBoton: noticia.idCategoria==2,
+                        rojoBoton: noticia.idCategoria==6,
+                        verdeBoton: noticia.idCategoria==1,
+                        azulOscuroBoton: noticia.idCategoria==5,
+                        rojoOscuroBoton: noticia.idCategoria==3,                                             
+                        violetaBoton: noticia.idCategoria==4}" 
+                        [routerLink]="['/detalleNoticia',noticia.id]" [routerLink]="['/detalleNoticia',noticia.id]" routerLinkActive="router-link-active" >Leer Más</button>
+                </div>
+            </div>
+        </div>
+    </section>
 </div>
